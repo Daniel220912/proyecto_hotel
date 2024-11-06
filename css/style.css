@@ -200,37 +200,18 @@ color: #333;
     text-align: center;
     padding: 20px;
  }
-
+               /* MOVIL */
  @media screen and (max-width:600px){
   
-    body{
-       flex-direction: column;
-    }
-
-    #info .info-img{
-        display: none;
-     }
-
      #showcase{
     height: 100vh;
      }
 
-     section{
-        flex-wrap: wrap;
-     }
+    #hamburger-menu{
+        display: none;
+    }
 
-     #top menu .hamburger{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width:60px;
-        height: 60px;
-        background-color: orange;
-        z-index: 1;
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-end;
-        padding: 0.5rem;
-        border-radius: 6px;
+    #top-menu .top-menu-container{
+        display: none;
     }
 }
