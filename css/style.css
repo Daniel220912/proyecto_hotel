@@ -214,8 +214,22 @@ p {
 
 /*Móvil vertical*---PORTRAIT*/
 @media only screen and (max-width: 500px) {
+    #top-menu{ /* para que se quede la barra fija cuando baje */
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
     #showcase{
         height: 100vh;
+    }
+
+    #info.info-img{
+        /* display: none; */
+        flex: 0;
+    }
+
+    #features{
+        /* flex-direction: column; para que se quede en fila */
     }
 }
 
