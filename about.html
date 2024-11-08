@@ -3,36 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="En nuestro hotel los monstruos se lo pasan de miedo"
-    />
-    <meta
-      name="keywords"
-      content="hotel, spa , monstruos, horror, sustos, sangre"
-    />
+    <meta name="description" content="En nuestro hotel los monstruos se lo pasan de miedo"/>
+    <meta name="keywords" content="hotel, spa , monstruos, horror, sustos, sangre"/>
     <!-- Meta tags para "meta" facebook, instagram,whatsapp -->
     <meta property="og:url" content="http://hoteltr.com/oferta.html" />
     <meta property="og:type" content="oferta" />
     <meta property="og:title" content="ofertas para mounstruos seniles" />
     <meta property="og:description" content="las mejores ofertas para..." />
-    <meta
-      property="og:image"
-      content="http://static01.nyt.com/images/2015/02/19/arts/international/19iht-btnumbers19A/19iht-btnumbers19A-facebookJumbo-v2.jpg"
-    />
+    <meta property="og:image" content="http://static01.nyt.com/images/2015/02/19/arts/international/19iht-btnumbers19A/19iht-btnumbers19A-facebookJumbo-v2.jpg"/>
     <title>Hotel Transilvania | Bienvenid@s</title>
     <!-- Font awesome cdn -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- <link rel="stylesheet" href="css/style.css" /> -->
+      referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="css/style.css" />
     <title>Conocenos</title>
 
-    <style>
+    <!-- <style>
       * {
         margin: 0;
         padding: 0;
@@ -76,57 +64,67 @@
       /* Seccion Info */
       #informacion {
         display: flex;
-        margin-bottom: 5%;
+        height: 50vh;
+       padding: 10px;
        
       }
 
       #informacion .img-info {
         background: url("./img/photo-2.jpg") no-repeat center center/cover;
-        flex: 1 1 auto;
-        height: 100%;
+        flex: 1;
+        width: 100%;
         border-radius: 50%;
+        
       }
       
       #informacion .contenido-info{
-        flex: 1 0 0%;
         display: flex;
+        flex: 2;
         flex-direction: column;
-        padding: 20px;
+        padding: 10px;
+      
       }
 
         /* Opinion */
       #opiniones{
         background: url(../proyecto_hotel/img/test-bg.jpg)no-repeat center center/cover;
-        height: 70vh;
-        display: flex;
-        display: block;
+        text-align: center;
+        padding-top: 30px;
       }
 
       #opiniones h2{
         color: white;
-        text-align: center;
-        align-items: center;
-        padding-top: 100px;
+        font-size: 2rem;
       }
 
-      #opiniones #primer-comentario{
-        
-        background-color: orange;
+      #opiniones .opinions{
+        display: flex;
+        gap: 40px;
+        padding: 20px;
+        margin: 40px;
+        border-radius: 8px;
+        text-align: left;
+        opacity: 0.9;
       }
 
-        #segundo-comentario{
-          background-color: orange;
+      #opiniones .opinions img{
+        width: 100px;
+        border-radius: 50%;
+        float: left;
       }
+      .comentarios{
+        background-color: #f88844;
+      }
+    
 
+
+    
       /* footer */
       footer p{
         text-align: center;
-        align-items: center;
-        padding: 20px;
         background-color: #333;
         color: white;
-      }
-
+      } -->
     </style>
   </head>
 
@@ -137,7 +135,7 @@
           <h1><a href="index.html">TVN Hotels</a></h1>
           <ul>
             <li><a class="active" href="index.html">Inicio</a></li>
-            <li><a href="about.html">Conócenos</a></li>
+            <li><a class="conocenos" href="about.html">Conócenos</a></li>
             <li><a href="contact.html">Contacto</a></li>
           </ul>
         </div>
@@ -145,37 +143,36 @@
     </header>
     <section id="informacion">
     <div class="contenido-info">
-        <h2><strong>Conoce nuestro Hotel</strong></h2>
+        <h2><strong class="text-primary" >Conoce </strong>nuestro Hotel</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
      </div>
      <div class="img-info"></div>
     </section>
 
-    <section>
-     <div id="opiniones">
-        <div>
-          <h2>Tu opinion nos la suda un poco</h2>
-        </div>
+    <section id="opiniones">
+      <h2>Tu opinion nos la suda un poco</h2>
+       <div class="opinions">
+          <div class="comentarios">
+            <img src="./img/person-1.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+              sapiente rerum est similique culpa quidem, repellat reprehenderit cum
+              ab repellendus perspiciatis delectus consectetur nobis atque molestiae
+              nulla hic velit magnam?</p>
+          </div>
 
-       <div id="primer-comentario">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-          sapiente rerum est similique culpa quidem, repellat reprehenderit cum
-          ab repellendus perspiciatis delectus consectetur nobis atque molestiae
-          nulla hic velit magnam?</p>
+          <div class="comentarios">
+            <img src="./img/person-2.jpg" alt="">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.  Obcaecati
+              excepturi debitis qui, laborum laudantium a. Nostrum veniam  dolorem
+              ducimus, amet eligendi unde blanditiis, debitis nam asperiores
+              tempora, optio sed accusantium?</p>
+          </div>
        </div>
-
-       <div id="segundo-comentario">
-         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.  Obcaecati
-           excepturi debitis qui, laborum laudantium a. Nostrum veniam  dolorem
-           ducimus, amet eligendi unde blanditiis, debitis nam asperiores
-           tempora, optio sed accusantium?</p>
-       </div>
-     </div>
     </section>
 
-    <footer id="main-footer">
-      <p>TVN Hotels &copy;2024, Todos los derechos reservados estan reservados.</p>
-    </footer>
+    <footer id="main-footer" class="bg-dark">
+      <p>TVN Hotels &copy; 2024, todos los derechos reservados</p>
+  </footer>
   </body>
 </html>
